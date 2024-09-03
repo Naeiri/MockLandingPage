@@ -1,0 +1,133 @@
+$PRIMARY: #75461B;
+$PRIMARYLIGHT: #FFFEED;
+
+body {
+    background-color: $PRIMARYLIGHT;
+}
+
+// fonts
+.vollkorn-regular,
+p,
+.nav-link,
+a,
+.btn,
+h2,
+h3,
+h4,
+h6,
+input,
+label,
+select,
+textarea {
+    font-family: "Vollkorn", serif;
+    margin-bottom: 0;
+}
+
+span {
+    font-family: "Amita", serif;
+}
+
+.nav-link {
+    font-size: 1.4rem;
+    color: $PRIMARY;
+
+    &:hover {
+        text-decoration: underline;
+        color: $PRIMARY;
+    }
+}
+
+// font-size
+.title-section {
+    font-size: 2.5rem;
+}
+
+.fs {
+    font-size: 1.2rem;
+}
+
+.col,
+.row {
+    width: 100%;
+}
+
+// colors
+.color-brown {
+    color: $PRIMARY;
+}
+
+.color-white {
+    color: white;
+}
+
+// buttons
+.button-primary-custom {
+    border: transparent;
+    border-radius: 5em;
+    padding: 0.5em 1.5em;
+    background-color: $PRIMARY;
+    color: white;
+    font-size: 1.5em;
+
+    &:hover {
+        background-color: transparent;
+        color: $PRIMARY;
+        border: 3px solid $PRIMARY;
+    }
+}
+
+@media (max-width: 992px) and (min-width: 604px) {
+    .button-primary-custom {
+        font-size: 1em;
+        margin: 0 !important;
+    }
+}
+
+@media (max-width: 604px) and (min-width: 426px) {
+    .button-primary-custom {
+        font-size: 0.8em;
+        margin: 0 !important;
+    }
+}
+
+@media (max-width: 426px) {
+    .title-section {
+        font-size: 2rem;
+    }
+
+    .button-primary-custom {
+        font-size: 0.5em;
+        margin: 0 !important;
+    }
+
+}
+
+.button-primary-outline-custom {
+    border: 2px solid $PRIMARY;
+    background-color: transparent;
+    color: $PRIMARY;
+    padding: 0.5rem 1rem;
+
+    &:hover {
+        color: white;
+        background-color: $PRIMARY;
+    }
+}
+
+.button-secondary-custom {
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    padding: 0.5rem 1rem;
+
+    &:hover {
+        background-color: white;
+        color: rgb($PRIMARY, 0.80);
+    }
+}
+
+// widths
+.custom-width {
+    max-width: 1280px;
+    margin: 0 auto;
+}
