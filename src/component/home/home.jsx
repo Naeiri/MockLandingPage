@@ -95,7 +95,7 @@ const Home = () => {
                     <img src={Logo} alt="ChloeZee Icon" className='logo-custom' />
                     <p className='mb-5 title-section color-brown'>Cake Gallery</p>
                     <div className="cake-gallery-grid">
-                        <img src="src/assets/images/home/fourth-section/img-1.png" alt="Cake 1" className="cake-img" />
+                        <img src="../../assets/images/home/fourth-section/img-1.png" alt="Cake 1" className="cake-img" />
                         <img src="src/assets/images/home/fourth-section/img-3.png" alt="Cake 3" className="cake-img grid-row-span-2" />
                         <img src="src/assets/images/home/fourth-section/img-4.png" alt="Cake 4" className="cake-img" />
                         <img src="src/assets/images/home/fourth-section/img-2.png" alt="Cake 2" className="cake-img" />
