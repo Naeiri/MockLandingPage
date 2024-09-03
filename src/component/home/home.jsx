@@ -18,7 +18,7 @@ import CarouselItems from '../shared-component/carousel-item/carousel-item';
 import Footer from '../shared-component/footer/footer';
 import ScrollToTop from '../shared-component/scrolltotop/scrolltotop';
 import TestimonialSlider from '../shared-component/testimonialslider/testimonial-slider';
-import './Home.scss';
+import './home.scss';
 
 const Home = () => {
     const navigate = useNavigate();
