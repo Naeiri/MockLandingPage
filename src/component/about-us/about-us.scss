@@ -1,0 +1,167 @@
+$PRIMARY: #75461B;
+
+.about-custom-style {
+    .accordion {
+        .accordion-item {
+            border: none;
+            background-color: transparent;
+
+            .accordion-header {
+                border-bottom: 1px solid #d8c3a5;
+            }
+        }
+
+        .accordion-button {
+            background-color: transparent;
+            color: $PRIMARY;
+            font-size: 1.25rem;
+            font-weight: 600;
+            padding: 1rem 0;
+
+            &::after {
+                background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%238e5f2f'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+            }
+
+            &:not(.collapsed) {
+                color: $PRIMARY;
+                background-color: transparent;
+                box-shadow: none;
+
+                &::after {
+                    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%238e5f2f'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+                    transform: rotate(-180deg);
+                }
+            }
+
+            &:focus {
+                box-shadow: none;
+                border-color: transparent;
+            }
+        }
+
+        .accordion-body {
+            padding: 1rem 0;
+            color: $PRIMARY;
+        }
+    }
+
+    .image-gallery {
+        .main-image {
+            img {
+                width: 100%;
+            }
+        }
+
+        .thumbnails {
+            img {
+                border: transparent;
+                width: 135px;
+                margin: 0 8.5px;
+                cursor: pointer;
+                transition: transform 0.3s ease;
+
+                &.active {
+                    transform: scale(1.1);
+                    border: 3px solid $PRIMARY;
+                }
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+
+    .baker {
+        background-image: url('../../assets/images/about-us/background-baker.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 500px;
+        width: 100%;
+        position: relative;
+
+        .content {
+            position: absolute;
+            top: 50%;
+            left: 70%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            z-index: 1;
+
+            .content-description {
+                width: 100%;
+                margin: 0 auto;
+            }
+        }
+    }
+
+    .stats {
+        background-image: url('../../assets/images/about-us/background-cake.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 500px;
+        width: 100%;
+        position: relative;
+
+        .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+            width: 100%;
+
+            .stats-item {
+                .stats-number {
+                    font-size: 2rem;
+                    font-weight: bold;
+                    margin-bottom: 0.5rem;
+                }
+
+                .stats-line {
+                    height: 2px;
+                    background-color: #8e5f2f;
+                    width: 50px;
+                    margin: 0 auto 0.5rem;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 1265px) {
+        .image-gallery {
+            .thumbnails {
+                img {
+                    width: 20%;
+                    margin: 0 5px;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 991px) {
+        .baker {
+            .content {
+                left: 63%;
+
+                .content-description {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 711px) {
+        .baker {
+            .content {
+                left: 50%;
+
+                .content-description {
+                    font-size: 0.8rem;
+                }
+            }
+        }
+    }
+}

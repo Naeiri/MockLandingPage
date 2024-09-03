@@ -1,0 +1,43 @@
+$PRIMARY: #75461B;
+
+.contact-custom-style {
+    .contact-subtitle {
+        font-family: "Dancing Script", cursive;
+        font-size: 2rem;
+    }
+
+    .icon-follow {
+        border: 1px solid $PRIMARY;
+    }
+
+    .font-mid {
+        font-size: 1.2rem
+    }
+
+    .font-lg {
+        font-size: 1.5rem;
+    }
+
+    input,
+    select,
+    textarea {
+        color: rgba($PRIMARY, 0.8);
+        transition: color 0.3s ease;
+
+        &:focus,
+        &:active {
+            color: rgba($PRIMARY, 1);
+        }
+
+        &::placeholder {
+            color: rgba($PRIMARY, 0.6);
+            transition: color 0.3s ease, opacity 0.3s ease;
+        }
+    }
+
+    @media (max-width: 1024px) {
+        .open-hours {
+            flex-direction: column;
+        }
+    }
+}

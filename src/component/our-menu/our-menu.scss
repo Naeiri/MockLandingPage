@@ -1,0 +1,166 @@
+$PRIMARY: #75461B;
+$PRIMARYLIGHT: #FFFEED;
+
+.menu-custom-style {
+    .img-cakes,
+    .img-sale {
+        width: 100%;
+    }
+
+    .border-brown {
+        border: 4px solid $PRIMARY;
+    }
+
+    .bg-primary-light {
+        background-color: $PRIMARYLIGHT;
+    }
+
+    .btn-view-details {
+        border: transparent;
+        border-radius: 10px;
+        padding: 0.5em 0;
+        width: 100%;
+        background-color: $PRIMARY;
+        color: white;
+
+        &:hover {
+            background-color: transparent;
+            color: $PRIMARY;
+            border: 3px solid $PRIMARY;
+        }
+    }
+
+    .btn-request-order {
+        border: transparent;
+        border-radius: 10px;
+        padding: 0.5em 0.8em;
+        background-color: $PRIMARY;
+        color: white;
+
+        &:hover {
+            background-color: transparent;
+            color: $PRIMARY;
+            border: 3px solid $PRIMARY;
+        }
+    }
+
+    .first-section {
+        .text-description {
+            width: 50%;
+            margin: 0 auto;
+        }
+
+        .button-primary-outline-custom {
+            border-radius: 50%;
+            padding: 0.5rem 0.8rem !important;
+        }
+
+        .icon-logo {
+            width: 55px;
+            margin-bottom: -20px;
+        }
+
+        .type-cakes,
+        .type-cakes-details {
+            width: 80%;
+            padding: 3rem 0 3rem 0;
+            border-radius: 30px;
+
+            .content-cakes {
+                margin-left: 0.01em;
+
+                .custom-cakes,
+                .cupcakes,
+                .specialty-cakes {
+                    border-radius: 14px;
+                    box-shadow: 4px 4px 4px 0 rgb(0, 0, 0, 0.25);
+
+                    .rounded-bottom-custom {
+                        border-bottom-left-radius: 13px;
+                        border-bottom-right-radius: 13px;
+                    }
+                }
+
+                .custom-cakes {
+                    margin-left: -100px;
+                }
+
+                .specialty-cakes {
+                    margin-right: -100px;
+                }
+            }
+        }
+    }
+
+    .second-section {
+        .timeline-line {
+            width: 5px;
+            background-color: $PRIMARY;
+        }
+
+        .timeline-line::before,
+        .timeline-line::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            transform: translateX(-48%);
+            width: 15px;
+            height: 15px;
+            background-color: $PRIMARY;
+            border-radius: 50%;
+        }
+
+        .timeline-line::before {
+            top: -10px;
+        }
+
+        .timeline-line::after {
+            bottom: -10px;
+        }
+
+        .timeline-content {
+            background-color: rgb($PRIMARY, 0.80);
+            color: white;
+        }
+
+        .timeline-dash {
+            width: 50px;
+            border-top: 2px dashed $PRIMARY;
+        }
+
+        .timeline-icon {
+            color: $PRIMARY;
+        }
+    }
+
+    @media (max-width: 991px) {
+        .first-section {
+            .type-cakes {
+                border: transparent !important;
+
+                .content-cakes {
+                    gap: 3rem;
+
+                    .cupcakes,
+                    .custom-cakes {
+                        margin: 0 !important;
+                    }
+
+                    .cupcakes,
+                    .custom-cakes,
+                    .specialty-cakes {
+                        border-radius: 19px;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 767.5px) {
+        .second-section {
+            .timeline-line {
+                display: none;
+            }
+        }
+    }
+}

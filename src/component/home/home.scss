@@ -1,0 +1,448 @@
+$PRIMARY: #75461B;
+$SECONDARY: #F8E9D1;
+
+.home-custom-style {
+    .carousel {
+        &-container {
+            position: relative;
+        }
+
+        &-caption-custom {
+            position: absolute;
+            top: 50%;
+            left: 10%;
+            transform: translateY(-50%);
+            text-align: left;
+            font-family: "Dancing Script", cursive;
+            text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+            color: white;
+            z-index: 1000;
+
+            h1,
+            h5 {
+                transform: rotate(-5.76deg);
+            }
+
+            h5 {
+                font-size: 8rem;
+                margin-top: -1.5rem;
+                margin-bottom: 2rem;
+            }
+
+            p {
+                width: 60%;
+            }
+        }
+    }
+
+    .second-section-style {
+        background-image: url('../../assets/images/home/second-section/section-two-background.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        width: 100%;
+    }
+
+    .logo-custom {
+        width: 60px;
+    }
+
+    .third-section-style {
+        margin-top: -90px;
+
+        .shaped-image {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+
+            .content-image {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                mask-image: var(--mask-image);
+                mask-size: contain;
+                mask-repeat: no-repeat;
+                mask-position: center;
+                -webkit-mask-attachment: fixed;
+                -webkit-mask-image: var(--mask-image);
+                -webkit-mask-size: contain;
+                -webkit-mask-repeat: no-repeat;
+                -webkit-mask-position: center;
+            }
+
+            .features {
+                background-color: rgba(0, 0, 0, 0.10);
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                text-align: center;
+                color: white;
+                z-index: 1;
+
+                .features-gap {
+                    gap: 100px;
+                }
+
+                .features-gap-1 {
+                    gap: 150px;
+                }
+
+                .feature-content {
+                    width: 250px;
+                }
+
+                .icon-features {
+                    color: $SECONDARY;
+                    transition: color 0.3s ease;
+                    width: 5rem;
+
+                    &:hover {
+                        color: darken($SECONDARY, 5%);
+                    }
+                }
+            }
+        }
+    }
+
+    .fourth-section-style {
+        .cake-gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+            padding: 10px;
+
+            .grid-col-span-2 {
+                grid-column: span 2;
+            }
+
+            .grid-row-span-2 {
+                grid-row: span 2;
+            }
+
+            .cake-img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border: 3px solid $PRIMARY;
+            }
+        }
+    }
+
+    .fifth-section-style {
+        background-image: url('../../assets/images/home/fifth-section/fifth-background.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        height: 500px;
+        width: 100%;
+        position: relative;
+
+        .seasonal-sale {
+            background-color: rgba(0, 0, 0, 0.10);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+            z-index: 1;
+        }
+    }
+
+    @media (max-width: 1120px) and (min-width: 992px) {
+        .third-section-style {
+            .features {
+                padding: 2rem !important;
+
+                .features-gap-1 {
+                    gap: 90px !important;
+
+                    h3 {
+                        font-size: 1rem;
+                    }
+                }
+
+                .feature-content {
+                    width: 150px !important;
+
+                    h3 {
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+
+        .fifth-section-style {
+            .seasonal-sale {
+                width: 80%;
+            }
+        }
+    }
+
+    @mixin caption-styles($h5-font-size, $p-font-size, $p-width: null, $p-margin-bottom: null) {
+        .carousel-caption-custom {
+            h5 {
+                font-size: $h5-font-size;
+                margin-top: -1.5rem;
+            }
+
+            p {
+                font-size: $p-font-size;
+
+                @if $p-width {
+                    width: $p-width;
+                }
+
+                @if $p-margin-bottom {
+                    margin-bottom: $p-margin-bottom;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 992px) and (min-width: 779px) {
+        @include caption-styles(5rem, 1rem, $p-margin-bottom: 2rem);
+
+        .third-section-style {
+            .features {
+                padding: 1rem !important;
+
+                .features-gap {
+                    gap: 60px !important;
+                }
+
+                .features-gap-1 {
+                    gap: 50px !important;
+
+                    h3 {
+                        font-size: 0.9rem;
+                    }
+
+                    p {
+                        font-size: 0.8rem;
+                    }
+                }
+
+                .feature-content {
+                    width: 130px !important;
+
+                    h3 {
+                        font-size: 0.9rem;
+                    }
+
+                    p {
+                        font-size: 0.8rem;
+                    }
+                }
+
+                .icon-features {
+                    width: 2.8rem !important;
+                }
+            }
+        }
+
+        .fifth-section-style {
+            .seasonal-sale {
+                width: 80%;
+            }
+        }
+    }
+
+    @media (max-width: 779px) and (min-width: 604px) {
+        @include caption-styles(5rem, 0.9rem, 70%, 1rem);
+
+        .third-section-style {
+            .features {
+                padding: 0.3rem !important;
+
+                .features-gap {
+                    gap: 50px !important;
+                }
+
+                .features-gap-1 {
+                    gap: 50px !important;
+
+                    h3 {
+                        font-size: 0.9rem;
+                    }
+
+                    p {
+                        font-size: 0.8rem;
+                    }
+                }
+
+                .feature-content {
+                    width: 130px !important;
+
+                    h3 {
+                        font-size: 0.9rem;
+                    }
+
+                    p {
+                        font-size: 0.8rem;
+                    }
+                }
+
+                .icon-features {
+                    width: 2.8rem !important;
+                }
+            }
+        }
+
+        .fifth-section-style {
+            .seasonal-sale {
+                width: 80%;
+
+                .seasonal-description {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 604px) and (min-width: 426px) {
+        .carousel-caption-custom {
+            left: 0;
+            text-align: center;
+
+            h5 {
+                font-size: 3.5rem;
+                margin-top: -1rem;
+                margin-bottom: 0;
+            }
+
+            p {
+                font-size: 0.8rem;
+                width: 60%;
+                margin: 0 auto;
+                padding-bottom: 1rem;
+            }
+        }
+
+        .third-section-style {
+            .features {
+                padding: 0.3rem !important;
+
+                .features-gap {
+                    gap: 25px !important;
+                }
+
+                .features-gap-1 {
+                    gap: 50px !important;
+
+                    h3 {
+                        font-size: 0.8rem;
+                    }
+
+                    p {
+                        font-size: 0.7rem;
+                    }
+                }
+
+                .feature-content {
+                    width: 130px !important;
+
+                    h3 {
+                        font-size: 0.8rem;
+                    }
+
+                    p {
+                        font-size: 0.7rem;
+                    }
+                }
+
+                .icon-features {
+                    width: 2rem !important;
+                    height: 2.3rem !important;
+                }
+            }
+        }
+
+        .fifth-section-style {
+            .seasonal-sale {
+                width: 90%;
+
+                .seasonal-description {
+                    font-size: 0.95rem;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 426px) {
+        .carousel-caption-custom {
+            top: 45%;
+            left: 0;
+            text-align: center;
+
+            h1 {
+                font-size: 1rem;
+            }
+
+            h5 {
+                font-size: 2rem;
+                margin-top: -0.5rem;
+                margin-bottom: 0;
+            }
+
+            p {
+                font-size: 0.6rem;
+                width: 75%;
+                margin: 0 auto;
+                padding-bottom: 0.1rem;
+            }
+        }
+
+        .third-section-style {
+            .features {
+                padding: 0.2rem !important;
+
+                .features-gap {
+                    gap: 25px !important;
+                }
+
+                .features-gap-1 {
+                    gap: 50px !important;
+
+                    h3 {
+                        font-size: 0.7rem;
+                    }
+
+                    p {
+                        font-size: 0.6rem;
+                    }
+                }
+
+                .feature-content {
+                    width: 95px !important;
+
+                    h3 {
+                        font-size: 0.7rem;
+                    }
+
+                    p {
+                        font-size: 0.6rem;
+                    }
+                }
+
+                .icon-features {
+                    width: 1.5rem !important;
+                    height: 2rem !important;
+                }
+            }
+        }
+
+        .fifth-section-style {
+            .seasonal-sale {
+                width: 90%;
+
+                .seasonal-description {
+                    font-size: 0.95rem;
+                }
+            }
+        }
+    }
+}

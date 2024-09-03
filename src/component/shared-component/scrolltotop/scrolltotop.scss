@@ -1,0 +1,22 @@
+$PRIMARY: #75461B;
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 45px;
+    right: 45px;
+    cursor: pointer;
+    background-color: $PRIMARY;
+    color: white;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    transition: opacity 0.3s;
+
+    &:hover {
+        opacity: 0.8;
+    }
+}
