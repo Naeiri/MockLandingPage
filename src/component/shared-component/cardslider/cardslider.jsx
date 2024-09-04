@@ -2,6 +2,12 @@ import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick-theme.css';
 import 'slick-carousel/slick/slick.css';
+import img1 from '../../../assets/images/home/second-section/birthday-cake.png';
+import img3 from '../../../assets/images/home/second-section/celebration-cake.png';
+import img6 from '../../../assets/images/home/second-section/cupcakes-mini-cakes.png';
+import img5 from '../../../assets/images/home/second-section/seasonal-holiday.png';
+import img4 from '../../../assets/images/home/second-section/specialty-cake.png';
+import img2 from '../../../assets/images/home/second-section/wedding-cake.png';
 import './cardslider.scss';
 import { NextArrow, PrevArrow } from './nextprevarrow/nextprevarrow';
 
@@ -37,32 +43,32 @@ const CardSlider = () => {
         {
             title: "Birthday Cake",
             description: "Themed Birthday Cakes (superhero, princess, sports), & Number Cakes",
-            image: "src/assets/images/home/second-section/birthday-cake.png",
+            image: img1,
         },
         {
             title: "Wedding Cake",
             description: "Multi-tiered, Themed, & Floral Wedding Cakes",
-            image: "src/assets/images/home/second-section/wedding-cake.png",
+            image: img2,
         },
         {
             title: "Celebration Cake",
             description: "Anniversary, Engagement, Graduation, Baby Shower, & Gender Reveal Cakes",
-            image: "src/assets/images/home/second-section/celebration-cake.png",
+            image: img3,
         },
         {
             title: "Specialty Cake",
             description: "Bento Cakes (small, personal-sized cakes)",
-            image: "src/assets/images/home/second-section/specialty-cake.png",
+            image: img4,
         },
         {
             title: "Seasonal & Holiday",
             description: "Christmas, Easter, Halloween, & Valentine's Day Cakes",
-            image: "src/assets/images/home/second-section/seasonal-holiday.png",
+            image: img5,
         },
         {
             title: "Cupcakes & Mini Cake",
             description: "Custom-designed Cupcakes & Themed Cupcakes",
-            image: "src/assets/images/home/second-section/cupcakes-mini-cakes.png",
+            image: img6,
         },
     ];
 
