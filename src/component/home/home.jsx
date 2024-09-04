@@ -11,6 +11,12 @@ import Img01 from '../../assets/images/home/first-section/img01.png';
 import Img02 from '../../assets/images/home/first-section/img02.png';
 import Img03 from '../../assets/images/home/first-section/img03.png';
 import Img04 from '../../assets/images/home/first-section/img04.png';
+import Img1 from '../../assets/images/home/fourth-section/img-1.png';
+import Img2 from '../../assets/images/home/fourth-section/img-2.png';
+import Img3 from '../../assets/images/home/fourth-section/img-3.png';
+import Img4 from '../../assets/images/home/fourth-section/img-4.png';
+import Img5 from '../../assets/images/home/fourth-section/img-5.png';
+import Img6 from '../../assets/images/home/fourth-section/img-6.png';
 import ContentImage from '../../assets/images/home/third-section/content-image.png';
 import ShapeImage from '../../assets/images/home/third-section/shape-image.png';
 import CardSlider from '../shared-component/cardslider/cardslider';
@@ -95,12 +101,12 @@ const Home = () => {
                     <img src={Logo} alt="ChloeZee Icon" className='logo-custom' />
                     <p className='mb-5 title-section color-brown'>Cake Gallery</p>
                     <div className="cake-gallery-grid">
-                        <img src="../../assets/images/home/fourth-section/img-1.png" alt="Cake 1" className="cake-img" />
-                        <img src="src/assets/images/home/fourth-section/img-3.png" alt="Cake 3" className="cake-img grid-row-span-2" />
-                        <img src="src/assets/images/home/fourth-section/img-4.png" alt="Cake 4" className="cake-img" />
-                        <img src="src/assets/images/home/fourth-section/img-2.png" alt="Cake 2" className="cake-img" />
-                        <img src="src/assets/images/home/fourth-section/img-5.png" alt="Cake 5" className="cake-img grid-row-span-2" />
-                        <img src="src/assets/images/home/fourth-section/img-6.png" alt="Cake 6" className="cake-img grid-col-span-2" />
+                        <img src={Img1} alt="Cake 1" className="cake-img" />
+                        <img src={Img3} alt="Cake 3" className="cake-img grid-row-span-2" />
+                        <img src={Img4} alt="Cake 4" className="cake-img" />
+                        <img src={Img2} alt="Cake 2" className="cake-img" />
+                        <img src={Img5} alt="Cake 5" className="cake-img grid-row-span-2" />
+                        <img src={Img6} alt="Cake 6" className="cake-img grid-col-span-2" />
                     </div>
                 </div>
             </div>
