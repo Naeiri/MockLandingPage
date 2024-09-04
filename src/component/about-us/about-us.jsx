@@ -1,5 +1,9 @@
 import React, { useState } from 'react';
 import bgImage from '../../assets/images/about-us/background-about.png';
+import image1 from '../../assets/images/about-us/image1.png';
+import image2 from '../../assets/images/about-us/image2.png';
+import image3 from '../../assets/images/about-us/image3.png';
+import image4 from '../../assets/images/about-us/image4.png';
 import Footer from '../shared-component/footer/footer';
 import Header from '../shared-component/header/header';
 import ScrollToTop from '../shared-component/scrolltotop/scrolltotop';
@@ -8,10 +12,10 @@ import AccordionItem from './accordionitem';
 import AnimatedNumber from './animatednumber';
 
 const images = [
-    { src: 'src/assets/images/about-us/image1.png', alt: 'Image 1' },
-    { src: 'src/assets/images/about-us/image2.png', alt: 'Image 2' },
-    { src: 'src/assets/images/about-us/image3.png', alt: 'Image 3' },
-    { src: 'src/assets/images/about-us/image4.png', alt: 'Image 4' },
+    { src: image1, alt: 'Image 1' },
+    { src: image2, alt: 'Image 2' },
+    { src: image3, alt: 'Image 3' },
+    { src: image4, alt: 'Image 4' },
 ];
 
 const AboutUs = () => {
