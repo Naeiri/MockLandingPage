@@ -2,6 +2,9 @@ import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick-theme.css';
 import 'slick-carousel/slick/slick.css';
+import userOne from '../../../assets/images/home/sixth-section/user-one.png';
+import userThree from '../../../assets/images/home/sixth-section/user-three.png';
+import userTwo from '../../../assets/images/home/sixth-section/user-two.png';
 import { NextArrow, PrevArrow } from '../cardslider/nextprevarrow/nextprevarrow';
 import './testimonial-slider.scss';
 
@@ -19,19 +22,19 @@ const TestimonialSlider = () => {
 
     const cards = [
         {
-            imageID: "src/assets/images/home/sixth-section/user-one.png",
+            imageID: userOne,
             name: "Sarah Perez",
             address: "Quezon City",
             comment: "Chloezee made my daughter’s birthday extra special with a stunning unicorn cake! It not only looked amazing but tasted even better. Everyone at the party couldn’t stop talking about it. I’ll definitely be ordering again!",
         },
         {
-            imageID: "src/assets/images/home/sixth-section/user-two.png",
+            imageID: userTwo,
             name: "Amanda & Jason Williams",
             address: "Antipolo City",
             comment: "We trusted Chloezee with our wedding cake, and they exceeded our expectations. The cake was beautifully customized to match our theme, and the flavors were incredible. Thank you for being a part of our big day!",
         },
         {
-            imageID: "src/assets/images/home/sixth-section/user-three.png",
+            imageID: userThree,
             name: "Leo Garcia",
             address: "Marikina City",
             comment: "I ordered a custom bento cake from Chloezee, and it was a huge hit! The design was exactly what I wanted, and the cake was delicious. The whole experience, from ordering to delivery, was smooth and easy.",
